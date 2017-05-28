@@ -16,10 +16,10 @@
 	<Description>
 		Moodle from jauer
 	</Description>
-	<Registry>https://registry.hub.docker.com/u/limetech/plex/</Registry>
-	<GitHub>https://github.com/limetech/dockerapp-plex</GitHub>
+	<Registry>https://github.com/laureanofo/docker-templates</Registry>
+	<GitHub>https://github.com/laureanofo/docker-templates</GitHub>
 	<Repository>jauer/moodle</Repository>
-	<Support>http://lime-technology.com/forum/index.php?topic=40654.0
+	<Support>https://github.com/laureanofo/docker-templates
 	</Support>
 	<BindTime>true</BindTime>
 	<Privileged>true</Privileged>
