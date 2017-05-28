@@ -42,7 +42,7 @@
 	<Data>
 		<Volume>
 			<HostDir>/mnt/user/appdata/SQLServer</HostDir>
-			<ContainerDir>/config</ContainerDir>
+			<ContainerDir>/var/lib/mysql</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume>
 	</Data>
