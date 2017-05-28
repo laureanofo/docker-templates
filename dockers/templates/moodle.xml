@@ -40,12 +40,11 @@
 		</Variable>
 		<Variable>
 			<Name>MOODLE_URL</Name>
-			<Value>http://192.168.59.103:8080</Value>
+			<Value>http://192.168.200.254:8080</Value>
 		</Variable>
 	</Environment>
 	<Data>
 	</Data>
-	<WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
 	<Banner></Banner>
 	<Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png
 	</Icon>
