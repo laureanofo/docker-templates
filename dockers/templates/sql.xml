@@ -1,46 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
-  <Date>2017-05-28</Date>
-  <Beta>False</Beta>
-  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>Sql</Name>
-  <Project>https://plex.tv/</Project>
-  <Changes>
-[center][img width='155px' src='http://d2631fvi2jdnb6.cloudfront.net/docker/limetech.png'][/center]
+	<Date>2017-05-28</Date>
+	<Beta>False</Beta>
+	<Category>MediaApp:Video MediaApp:Music MediaApp:Photos
+		MediaServer:Video MediaServer:Music MediaServer:Photos
+	</Category>
+	<Name>Sql</Name>
+	<Project>https://plex.tv/</Project>
+	<Changes>
+		[center][img width='155px'
+		src='http://d2631fvi2jdnb6.cloudfront.net/docker/limetech.png'][/center]
 
-[center][font size=4]SQL Server Change Log[/font][/center]
+		[center][font size=4]SQL Server Change Log[/font][/center]
 
-[font size=3]2017.05.28[/font]
-- Initial Release
-  </Changes>
-  <Overview>
-    SQL
-  </Overview>
-  <Description>
-    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/config[/b] : this is where PMS will store it's databases and configuration.[br][br]
-    [b]Tip:[/b] You can add more volume mappings if you wish PMS has access to it.
-  </Description>
-  <Registry>https://registry.hub.docker.com/u/limetech/plex/</Registry>
-  <GitHub>https://github.com/limetech/dockerapp-plex</GitHub>
-  <Repository>centurylink/mysql</Repository>
-  <Support>http://lime-technology.com/forum/index.php?topic=40654.0</Support>
-  <BindTime>true</BindTime>
-  <Privileged>true</Privileged>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish/>
-  </Networking>
-  <Environment/>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/PlexMediaServer</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
-  <Banner></Banner>
-  <Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+		[font
+		size=3]2017.05.28[/font]
+		- Initial Release
+	</Changes>
+	<Overview>
+		SQL
+	</Overview>
+	<Description>
+		The Plex Media Server enriches your life by organizing all
+		your personal
+		media, presenting it beautifully and streaming it to all
+		of your
+		devices. It's easy to use, it's awesome, and it's free![br][br]
+		[b][span style='color: #E80000;']Directions:[/span][/b][br]
+		[b]/config[/b] : this is where PMS will store it's databases and
+		configuration.[br][br]
+		[b]Tip:[/b] You can add more volume mappings if
+		you wish PMS has access to it.
+	</Description>
+	<Registry>https://registry.hub.docker.com/u/limetech/plex/</Registry>
+	<GitHub>https://github.com/limetech/dockerapp-plex</GitHub>
+	<Repository>centurylink/mysql</Repository>
+	<Support>http://lime-technology.com/forum/index.php?topic=40654.0
+	</Support>
+	<BindTime>true</BindTime>
+	<Privileged>true</Privileged>
+	<Networking>
+		<Mode>bridge</Mode>
+		<Publish>
+			<Port>
+				<HostPort>3306</HostPort>
+				<ContainerPort>3306</ContainerPort>
+				<Protocol>tcp</Protocol>
+			</Port>
+		</Publish>
+	</Networking>
+	<Environment />
+	<Variable>
+		<Name>MYSQL_ROOT_PASSWORD</Name>
+		<Value>pass@word01</Value>
+	</Variable>
+	<Data>
+		<Volume>
+			<HostDir>/mnt/user/appdata/SQLServer</HostDir>
+			<ContainerDir>/config</ContainerDir>
+			<Mode>rw</Mode>
+		</Volume>
+	</Data>
+	<WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+	<Banner></Banner>
+	<Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png
+	</Icon>
 </Containers>
