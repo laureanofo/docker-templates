@@ -38,6 +38,18 @@
 			<Name>MYSQL_ROOT_PASSWORD</Name>
 			<Value>password</Value>
 		</Variable>
+		<Variable>
+			<Name>MYSQL_DATABASE</Name>
+			<Value>moodle</Value>
+		</Variable>
+		<Variable>
+			<Name>MYSQL_USER</Name>
+			<Value>moodle</Value>
+		</Variable>
+		<Variable>
+			<Name>MYSQL_PASSWORD</Name>
+			<Value>moodle</Value>
+		</Variable>
 	</Environment>
 	<Data>
 		<Volume>
