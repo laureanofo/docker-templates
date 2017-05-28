@@ -3,15 +3,15 @@
 	<Date>2017-05-28</Date>
 	<Beta>False</Beta>
 	<Category>DatabaseServer:</Category>
-	<Name>Sql</Name>
-	<Project>https://plex.tv/</Project>
+	<Name>SQLServer</Name>
+	<Project>https://github.com/laureanofo/docker-templates</Project>
 	<Changes>
 		[font
 		size=3]2017.05.28[/font]
 		- Initial Release
 	</Changes>
 	<Overview>
-		SQL
+		SQL Server
 	</Overview>
 	<Description>
 		SQL Server from centurylink
@@ -58,8 +58,6 @@
 			<Mode>rw</Mode>
 		</Volume>
 	</Data>
-	<WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
 	<Banner></Banner>
-	<Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png
-	</Icon>
+	<Icon>https://www.mysql.com/common/logos/logo-mysql-170x115.png</Icon>
 </Containers>

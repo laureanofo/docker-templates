@@ -4,7 +4,7 @@
 	<Beta>False</Beta>
 	<Category>elearning:</Category>
 	<Name>Moodle</Name>
-	<Project>https://plex.tv/</Project>
+	<Project>https://github.com/laureanofo/docker-templates</Project>
 	<Changes>
 		[font
 		size=3]2017.05.28[/font]
@@ -58,6 +58,5 @@
 	<Data>
 	</Data>
 	<Banner></Banner>
-	<Icon>http://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png
-	</Icon>
+	<Icon>https://upload.wikimedia.org/wikipedia/commons/6/6f/Moodle-icon.png</Icon>
 </Containers>
