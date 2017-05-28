@@ -36,7 +36,19 @@
 	<Environment>
 		<Variable>
 			<Name>DB_PORT_3306_TCP_ADDR</Name>
-			<Value>127.0.0.1</Value>
+			<Value>192.168.200.254</Value>
+		</Variable>
+		<Variable>
+			<Name>DB_ENV_MYSQL_DATABASE</Name>
+			<Value>moodle</Value>
+		</Variable>
+		<Variable>
+			<Name>DB_ENV_MYSQL_USER</Name>
+			<Value>moodle</Value>
+		</Variable>
+		<Variable>
+			<Name>DB_ENV_MYSQL_PASSWORD</Name>
+			<Value>moodle</Value>
 		</Variable>
 		<Variable>
 			<Name>MOODLE_URL</Name>
