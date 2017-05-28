@@ -35,7 +35,7 @@
 	</Networking>
 	<Environment>
 		<Variable>
-			<Name>MYSQL_HOST</Name>
+			<Name>DB_PORT_3306_TCP_ADDR</Name>
 			<Value>127.0.0.1</Value>
 		</Variable>
 		<Variable>
