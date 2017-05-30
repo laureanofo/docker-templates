@@ -51,7 +51,7 @@
     <Volume>
       <HostDir>path to config</HostDir>
       <ContainerDir>/hostdata/</ContainerDir>
-      <Mode>rw</Mode>
+      <Mode>ro</Mode>
     </Volume>
 </Data>	<Banner></Banner>
 	<Icon>https://www.iaso.com/assets/img/IASO-logo-social.png</Icon>
