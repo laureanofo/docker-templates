@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+	<Date>2017-05-30</Date>
+	<Beta>False</Beta>
+	<Category>backup:</Category>
+	<Name>iaso_backup_manager</Name>
+	<Project>https://hub.docker.com/r/nitelmursoftware/iaso_backup_manager/</Project>
+	<Changes>
+		[font
+		size=3]2017.05.30[/font]
+		- Initial Release
+	</Changes>
+	<Overview>
+		SQL
+	</Overview>
+	<Description>
+		iaso backup manager
+	</Description>
+	<Registry>https://hub.docker.com/r/nitelmursoftware/iaso_backup_manager/</Registry>
+	<GitHub>https://hub.docker.com/r/nitelmursoftware/iaso_backup_manager/</GitHub>
+	<Repository>nitelmursoftware/iaso_backup_manager</Repository>
+	<Support>https://hub.docker.com/r/nitelmursoftware/iaso_backup_manager/</Support>
+	<BindTime>true</BindTime>
+	<Privileged>true</Privileged>
+	<Networking>
+		<Mode>bridge</Mode>
+		<Publish>
+			<Port>
+				<HostPort>5000</HostPort>
+				<ContainerPort>5000</ContainerPort>
+				<Protocol>tcp</Protocol>
+			</Port>
+			<Port>
+				<HostPort>5314</HostPort>
+				<ContainerPort>5314</ContainerPort>
+				<Protocol>tcp</Protocol>
+			</Port>
+		</Publish>
+	</Networking>
+	<Environment>
+		<Variable>
+			<Name>DEVICE</Name>
+			<Value>name</Value>
+		</Variable>
+		<Variable>
+			<Name>PASSWORD</Name>
+			<Value>password</Value>
+		</Variable>
+	</Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/hostdata</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+</Data>	<Banner></Banner>
+	<Icon>https://www.iaso.com/assets/img/IASO-logo-social.png</Icon>
+</Containers>
