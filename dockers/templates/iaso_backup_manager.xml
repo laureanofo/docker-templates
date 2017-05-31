@@ -50,7 +50,7 @@
   <Data>
     <Volume>
       <HostDir>path to config</HostDir>
-      <ContainerDir>/hostdata/</ContainerDir>
+      <ContainerDir>/mnt/</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
 </Data>	<Banner></Banner>
