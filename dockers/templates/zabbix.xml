@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+	<Date>2018-05-09</Date>
+	<Beta>False</Beta>
+	<Category>snmpp:</Category>
+	<Name>Zabbix</Name>
+	<Project>https://github.com/laureanofo/docker-templates</Project>
+	<Changes>
+		[font
+		size=3]2017.05.28[/font]
+		- Initial Release
+	</Changes>
+	<Overview>
+		SQL
+	</Overview>
+	<Description>
+Zabbix
+	</Description>
+	<Registry>https://github.com/laureanofo/docker-templates</Registry>
+	<GitHub>https://github.com/laureanofo/docker-templates</GitHub>
+	<Repository>--link mysql:mysql zabbix/zabbix-web-nginx-mysql</Repository>
+	<Support>https://github.com/laureanofo/docker-templates
+	</Support>
+	<BindTime>true</BindTime>
+	<Privileged>true</Privileged>
+	<Networking>
+		<Mode>bridge</Mode>
+		<Publish>
+			<Port>
+				<HostPort>8080</HostPort>
+				<ContainerPort>6080</ContainerPort>
+				<Protocol>tcp</Protocol>
+			</Port>
+		</Publish>
+	</Networking>
+	<Environment>
+		<Variable>
+			<Name>MYSQL_USER</Name>
+			<Value>root</Value>
+		</Variable>
+		<Variable>
+			<Name>MYSQL_PASSWORD</Name>
+			<Value>pass</Value>
+		</Variable>
+		<Variable>
+			<Name>PHP_TZ</Name>
+			<Value>Europe/Madrid</Value>
+		</Variable>
+	</Environment>
+	<Data>
+	</Data>
+	<Banner></Banner>
+	<Icon>https://es.wikipedia.org/wiki/Zabbix#/media/File:Zabbix_logo.png</Icon>
+</Containers>
